@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import LinkedinIcon from '../components/icons/LinkedInIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
 ---
 
 <Layout title="Portfolio">
@@ -15,12 +16,17 @@ import LinkedinIcon from '../components/icons/LinkedInIcon.astro';
 				><Badge>Disponible para trabajar</Badge></a></h1>
 			<h2 class="text-2xl opacity-80 text-wrap">Ingeniero informático y desarrollador de software fullstack. Javascript, Python, Flutter, AWS</h2>
 
-			<ul>
-				<a href="https://linkedin.com/in/david-hpf">
+			<nav class="flex gap-x-2">
+				<SocialPill href="https://linkedin.com/in/david-hpf">
 					<LinkedinIcon class="w-6 h-6" />
 					LinkedIn
-				</a>
-			</ul>
+				</SocialPill>
+				<SocialPill href="https://linkedin.com/in/david-hpf">
+					<LinkedinIcon class="w-6 h-6" />
+					Github
+				</SocialPill>
+			</nav>
+
 		</section>
 
 	</main>
