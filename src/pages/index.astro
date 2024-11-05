@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import LinkedinIcon from '../components/icons/LinkedInIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
 import GitHubIcon from '../components/icons/GitHub.astro';
@@ -14,7 +15,7 @@ import Experience from '../components/Experience.astro';
 >
 	<main>
 
-		<section class="w-full lg:w-[740px] mx-auto py-44">
+		<SectionContainer>
 			<img class="rounded-full w-16 h-16 mb-4" src="/images/David.jpg" alt="Logo for portfolio">
 			<h1 class="text-blue text-5xl font-bold flex flex-row gap-x-4 pb-10">Hey, soy David <a 
 					href="https://linkedin.com/in/david-hpf"
@@ -36,12 +37,12 @@ import Experience from '../components/Experience.astro';
 					david-hpf@hotmail.com
 				</SocialPill>
 			</nav>
+		</SectionContainer>
 
-		</section>
-
-		<section>
+		<SectionContainer>
 			<Experience />
-		</section>
+		</SectionContainer>
+
 
 	</main>
 </Layout>
